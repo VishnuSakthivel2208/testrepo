@@ -1,0 +1,839 @@
+# Template for each host config
+# Please check https://github.com/projectxyzio/ops-internal/blob/master/appium/appium2.md as well
+#
+# dev-ca-tor-0-proxy-5-lin.headspin.io:  # host name
+#   secret: <replace to uuid> # Used for JWT. This will be via DB.
+#   external_port: <port number for external>
+#   devices:  # add supported device_type on the pbox. Please check https://github.com/projectxyzio/ops-internal/blob/master/appium/appium2.md#supported-devices-and-each-devicetype-to-manage-them
+#     - tizentv   # DEVICE_TYPE_TIZENTV
+#   appium_drivers: # "appium_drivers" is used as automationName in Appium.
+#     - pressbot:
+#       - sourceType: local
+#         package: appium-pressbot-driver
+#     - tizentv:
+#       - sourceType: npm
+#         package: appium-tizen-tv-driver
+#         version: "0.4.1"
+#
+
+default:
+  default_version: latest
+  appium_versions:
+    - type: npm
+      version: "2.0.0-beta.52"  # TODO: remove later
+    - type: npm
+      version: "2.0.0"  # TODO: remove later
+  default_appium2_version: "2.0.0"
+
+dev-ca-tor-0-proxy-5-lin.headspin.io:
+  secret: c1491a85-d906-11eb-a3d7-acde48001122 # Used for JWT. This will be via DB.
+  external_port: 7301
+  # Add available devices by 'device_type' in device_address.py or device_list_cache_model.py
+  devices:
+    - pressbot  # DEVICE_TYPE_PRESSBOT
+    - tizentv   # DEVICE_TYPE_TIZENTV
+    - webos
+  appium_drivers:
+    - pressbot:
+      - sourceType: local
+        package: appium-pressbot-driver
+    - tizentv:
+      - sourceType: npm
+        package: appium-tizen-tv-driver
+        version: "0.11.0"
+    - webos:
+      - sourceType: npm
+        package: appium-lg-webos-driver
+        version: "0.3.1"
+  appium_versions:
+    - type: npm
+      version: "2.0.0-beta.12"  # for pressbot
+
+dev-ca-tor-2-proxy-14-lin.headspin.io:
+  secret: c1491a85-d906-11eb-a3d7-acde48001122 # Used for JWT. This will be via DB.
+  external_port: 7301
+  devices:
+    - roku
+    - webos
+    - tizentv
+    - viziotv
+  appium_drivers:
+    - roku:
+      - sourceType: npm
+        package: "@headspinio/appium-roku-driver"
+        version: "2.6.0"
+    - webos:
+      - sourceType: npm
+        package: appium-lg-webos-driver
+        version: "0.3.1"
+    - tizentv:
+      - sourceType: npm
+        package: appium-tizen-tv-driver
+        version: "0.11.0"
+    - vizio:
+      - sourceType: local
+        package: appium-vizio-driver
+
+dev-us-sjc-1-proxy-3-lin.headspin.io:
+  secret: 01ccefd8-c50d-4a86-997e-cd0d0614463e # Used for JWT. This will be via DB.
+  external_port: 7300
+  # Add available devices by 'device_type' in device_address.py or device_list_cache_model.py
+  devices:
+    - pressbot  # DEVICE_TYPE_PRESSBOT
+  appium_drivers:
+    - pressbot:
+      - sourceType: local
+        package: appium-pressbot-driver
+  appium_versions:
+    - type: npm
+      version: "2.0.0-beta.12"  # for pressbot
+
+dev-us-pao-7-proxy-1-lin.headspin.io:
+  secret: 1c704634-9ae0-440d-a07a-73d6cd94beb3
+  external_port: 7301
+  # Add available devices by 'device_type' in device_address.py or device_list_cache_model.py
+  devices:
+    - tizentv   # DEVICE_TYPE_TIZENTV
+  appium_drivers:
+    - tizentv:
+      - sourceType: npm
+        package: appium-tizen-tv-driver
+        version: "0.11.0"
+
+dev-us-pao-3-proxy-22-lin.headspin.io:
+  secret: 49d3a12f-fc45-4248-8a83-25e3cd301296 # TODO: this secret will be via DB.
+  external_port: 7302
+  devices:
+    - roku
+  appium_drivers:
+    - roku:
+      - sourceType: npm
+        package: "@headspinio/appium-roku-driver"
+        version: "2.0.8"
+
+dev-us-pao-3-proxy-23-lin.headspin.io:
+  secret: 78af146c-5093-4521-ae4d-6176124a44f7 # TODO: this secret will be via DB.
+  external_port: 7303
+  devices:
+    - roku
+  appium_drivers:
+    - roku:
+      - sourceType: npm
+        package: "@headspinio/appium-roku-driver"
+        version: "2.0.8"
+
+dev-us-pao-3-proxy-12-lin.headspin.io:
+  secret: 9b3b7bb5-a0db-11ec-8d12-acde48001122
+  external_port: 7300
+  devices:
+    - roku
+  appium_drivers:
+    - roku:
+      - sourceType: npm
+        package: "@headspinio/appium-roku-driver"
+        version: "2.0.8"
+
+# Discovery SamsungTV_US_1
+dev-us-pao-20-proxy-9-lin.headspin.io:
+  secret: 101253c7-1ce3-11ed-b761-acde48001122
+  external_port: 7301
+  # Add available devices by 'device_type' in device_address.py or device_list_cache_model.py
+  devices:
+    - tizentv   # DEVICE_TYPE_TIZENTV
+    - webos
+    - viziotv
+  appium_drivers:
+    - tizentv:
+      - sourceType: npm
+        package: appium-tizen-tv-driver
+        version: "0.11.0"
+    - webos:
+      - sourceType: npm
+        package: appium-lg-webos-driver
+        version: "0.3.1"
+    - vizio:
+      - sourceType: local
+        package: appium-vizio-driver
+
+# ABS CBN SamsungTV_US_1
+dev-us-pao-7-proxy-33-lin.headspin.io:
+  secret: 3a46b467-6fed-4fc4-9435-d4db2ae3033b
+  external_port: 7302
+  # Add available devices by 'device_type' in device_address.py or device_list_cache_model.py
+  devices:
+    - tizentv   # DEVICE_TYPE_TIZENTV
+    - webos
+  appium_drivers:
+    - tizentv:
+      - sourceType: npm
+        package: appium-tizen-tv-driver
+        version: "0.11.0"
+    - webos:
+      - sourceType: npm
+        package: appium-lg-webos-driver
+        version: "0.0.6"
+
+# Globo TV Dedicated
+dev-us-pao-7-proxy-2-lin.headspin.io:
+  secret: 9ab5ad67-ab8c-4a9a-a3a8-b45141b44dde
+  external_port: 7303
+  # Add available devices by 'device_type' in device_address.py or device_list_cache_model.py
+  devices:
+    - tizentv   # DEVICE_TYPE_TIZENTV
+    - webos
+  appium_drivers:
+    - tizentv:
+      - sourceType: npm
+        package: appium-tizen-tv-driver
+        version: "0.11.0"
+    - webos:
+      - sourceType: npm
+        package: appium-lg-webos-driver
+        version: "0.0.6"
+
+
+# # Discovery Roku
+# dev-us-pao-3-proxy-16-lin.headspin.io:
+#   secret: 4fe76213-f1dd-49d5-ac8b-621f13555b8c
+#   external_port: 7306
+#   devices:
+#     - roku
+#   appium_drivers:
+#     - roku:
+#       - sourceType: npm
+#         package: "@headspinio/appium-roku-driver"
+#         version: "2.0.8"
+# # Discovery Roku
+# dev-us-pao-3-proxy-24-lin.headspin.io:
+#   secret: fc0751a7-0b0d-4f74-a20e-a6f204e896d7
+#   external_port: 7307
+#   devices:
+#     - roku
+#   appium_drivers:
+#     - roku:
+#       - sourceType: npm
+#         package: "@headspinio/appium-roku-driver"
+#         version: "2.0.8"
+
+# Discovery Roku
+dev-us-pao-20-proxy-2-lin.headspin.io:
+  secret: 64130dc2-6e7d-4b2f-90e8-6ee6bb41c9dc
+  external_port: 7303
+  devices:
+    - roku
+  appium_drivers:
+    - roku:
+      - sourceType: npm
+        package: "@headspinio/appium-roku-driver"
+        version: "2.6.0"
+
+# Discovery Roku
+dev-us-pao-20-proxy-3-lin.headspin.io:
+  secret: 19d4aa4a-aa6d-4368-8844-0875e7834947
+  external_port: 7304
+  devices:
+    - roku
+  appium_drivers:
+    - roku:
+      - sourceType: npm
+        package: "@headspinio/appium-roku-driver"
+        version: "2.6.0"
+
+# Discovery Roku
+dev-us-pao-20-proxy-12-lin.headspin.io:
+  secret: 4b7dad2b-25ac-4e6c-95ea-ab9e044b8e12
+  external_port: 7305
+  devices:
+    - roku
+  appium_drivers:
+    - roku:
+      - sourceType: npm
+        package: "@headspinio/appium-roku-driver"
+        version: "2.0.8"
+
+# WBD Discovery Roku
+dev-us-pao-20-proxy-20-lin.headspin.io:
+  secret: e9084b3c-a35f-41ca-ba5d-d1854cb16f1b
+  external_port: 7306
+  devices:
+    - roku
+  appium_drivers:
+    - roku:
+      - sourceType: npm
+        package: "@headspinio/appium-roku-driver"
+        version: "2.0.8"
+
+# Fox Roku
+dev-us-pao-20-proxy-21-lin.headspin.io:
+  secret: 846fe2ef-de19-47fc-b4d3-bd694f9088c9
+  external_port: 7307
+  devices:
+    - roku
+  appium_drivers:
+    - roku:
+      - sourceType: npm
+        package: "@headspinio/appium-roku-driver"
+        version: "2.0.8"
+
+dev-us-pao-4-proxy-7-lin.headspin.io:
+  secret: 0cb209ae-c294-44d5-8d85-48b6880c460d
+  external_port: 7301
+  devices:
+    - roku
+  appium_drivers:
+    - roku:
+      - sourceType: npm
+        package: "@headspinio/appium-roku-driver"
+        version: "2.0.8"
+
+dev-us-pao-20-proxy-26-lin.headspin.io:
+  secret: 30ce858a-627c-41a3-8fcb-a4030053600d
+  external_port: 7308
+  devices:
+    - tizentv   # DEVICE_TYPE_TIZENTV
+    - viziotv
+  appium_drivers:
+    - tizentv:
+      - sourceType: npm
+        package: appium-tizen-tv-driver
+        version: "0.11.0"
+    - vizio:
+      - sourceType: local
+        package: appium-vizio-driver
+
+dev-us-sny-3-proxy-30-lin.headspin.io:
+  secret: 9f992d46-c678-46ce-b9e4-c37c738319f2
+  external_port: 7301
+  devices:
+    - roku
+  appium_drivers:
+    - roku:
+      - sourceType: npm
+        package: "@headspinio/appium-roku-driver"
+        version: "2.0.8"
+
+dev-us-pao-20-proxy-27-lin.headspin.io:
+  secret: 1aaf315b-1ea0-46aa-8994-9c4bc7d67127
+  external_port: 7309
+  devices:
+    - roku
+  appium_drivers:
+    - roku:
+      - sourceType: npm
+        package: "@headspinio/appium-roku-driver"
+        version: "2.0.8"
+
+dev-us-sny-7-proxy-3-lin.headspin.io:
+  secret: 30ce858a-627c-41a3-8fcb-a4030053600d
+  external_port: 7301
+  devices:
+    - tizentv   # DEVICE_TYPE_TIZENTV
+    - roku
+  appium_drivers:
+    - tizentv:
+      - sourceType: npm
+        package: appium-tizen-tv-driver
+        version: "0.11.0"
+    - roku:
+      - sourceType: npm
+        package: "@headspinio/appium-roku-driver"
+        version: "2.0.8"
+
+dev-us-sny-9-proxy-2-lin.headspin.io:
+  secret: fbe4f64b-94d6-443a-b337-ce037d32da12 # Used for JWT. This will be via DB.
+  external_port: 7301
+  devices:
+    - webos
+    - roku
+    - tizentv
+  appium_drivers:
+    - webos:
+      - sourceType: npm
+        package: appium-lg-webos-driver
+        version: "0.3.1"
+    - roku:
+      - sourceType: npm
+        package: "@headspinio/appium-roku-driver"
+        version: "2.6.0"
+    - tizentv:
+      - sourceType: npm
+        package: appium-tizen-tv-driver
+        version: "0.11.0"
+
+dev-us-sny-9-proxy-3-lin.headspin.io:
+  secret: a739718c-eb3b-4771-8eb2-20a345e31c93 # Used for JWT. This will be via DB.
+  external_port: 7302
+  devices:
+    - webos
+    - tizentv
+    - roku
+  appium_drivers:
+    - webos:
+      - sourceType: npm
+        package: appium-lg-webos-driver
+        version: "0.0.6"
+    - tizentv:
+      - sourceType: npm
+        package: appium-tizen-tv-driver
+        version: "0.11.0"
+    - roku:
+      - sourceType: npm
+        package: "@headspinio/appium-roku-driver"
+        version: "2.6.0"
+
+dev-us-sny-9-proxy-5-lin.headspin.io:
+  secret: 58fd20e8-6dff-46ef-8ef9-af5c3b0ecaa4 # Used for JWT. This will be via DB.
+  external_port: 7303
+  devices:
+    - webos
+  appium_drivers:
+    - webos:
+      - sourceType: npm
+        package: appium-lg-webos-driver
+        version: "0.3.1"
+
+dev-us-sny-9-proxy-10-lin.headspin.io:
+  secret: bf75e68c-f167-4830-a6fb-0c043bf209cc
+  external_port: 7304
+  devices:
+    - roku
+  appium_drivers:
+    - roku:
+      - sourceType: npm
+        package: "@headspinio/appium-roku-driver"
+        version: "2.6.0"
+
+dev-us-sny-9-proxy-13-lin.headspin.io:
+  secret: 1e22a89b-e535-4f15-9ac7-f467b5e68c76
+  external_port: 7305
+  devices:
+    - roku
+  appium_drivers:
+    - roku:
+      - sourceType: npm
+        package: "@headspinio/appium-roku-driver"
+        version: "2.6.0"
+
+dev-us-sny-7-proxy-4-lin.headspin.io:
+  secret: e8add2b0-84d5-4600-bc8c-95b8c83632d1
+  external_port: 7302
+  devices:
+    - roku
+  appium_drivers:
+    - roku:
+      - sourceType: npm
+        package: "@headspinio/appium-roku-driver"
+        version: "2.6.0"
+
+dev-us-sny-9-proxy-24-lin.headspin.io:
+  secret: 6a480e83-f2ee-477a-90fa-3e4314ed455a
+  external_port: 7306
+  devices:
+    - roku
+  appium_drivers:
+    - roku:
+      - sourceType: npm
+        package: "@headspinio/appium-roku-driver"
+        version: "2.6.0"
+
+dev-us-sny-9-proxy-27-lin.headspin.io:
+  secret: 26190964-ff7e-43fe-93ae-b830fdb7fb0a
+  external_port: 7307
+  devices:
+    - roku
+    - webos
+    - tizentv
+  appium_drivers:
+    - roku:
+      - sourceType: npm
+        package: "@headspinio/appium-roku-driver"
+        version: "2.6.0"
+    - webos:
+      - sourceType: npm
+        package: appium-lg-webos-driver
+        version: "0.3.1"
+    - tizentv:
+      - sourceType: npm
+        package: appium-tizen-tv-driver
+        version: "0.11.0"
+
+# ABS CBN Roku
+dev-us-pao-7-proxy-6-lin.headspin.io:
+  secret: 33c0d1ec-dc62-40b2-a22b-3d5db94678bc
+  external_port: 7304
+  devices:
+    - roku
+  appium_drivers:
+    - roku:
+      - sourceType: npm
+        package: "@headspinio/appium-roku-driver"
+        version: "2.0.8"
+
+dev-ca-tor-0-proxy-1-lin.headspin.io:
+  secret: 18df0536-05ef-439e-acc9-3adcfd06a332 # Used for JWT. This will be via DB.
+  external_port: 7302
+  # Add available devices by 'device_type' in device_address.py or device_list_cache_model.py
+  devices:
+    - roku
+    - webos
+  appium_drivers:
+    - roku:
+      - sourceType: npm
+        package: "@headspinio/appium-roku-driver"
+        version: "2.0.8"
+    - webos:
+      - sourceType: npm
+        package: appium-lg-webos-driver
+        version: "0.0.6"
+
+dev-us-sny-6-proxy-4-lin.headspin.io:
+  secret: 1c3f302a-128a-441b-acb5-4a6ed1c2a244
+  external_port: 7302
+  devices:
+    - roku
+  appium_drivers:
+    - roku:
+      - sourceType: npm
+        package: "@headspinio/appium-roku-driver"
+        version: "2.0.8"
+
+dev-us-pao-3-proxy-24-lin.headspin.io:
+  secret: 09fdfc52-1365-4a16-8f34-11401763dde3
+  external_port: 7304
+  devices:
+    - roku
+  appium_drivers:
+    - roku:
+      - sourceType: npm
+        package: "@headspinio/appium-roku-driver"
+        version: "2.0.8"
+
+dev-us-pao-3-proxy-8-lin.headspin.io:
+  secret: 74489aa2-a473-4ac7-bfd1-726b538b6d06
+  external_port: 7305
+  devices:
+    - roku
+  appium_drivers:
+    - roku:
+      - sourceType: npm
+        package: "@headspinio/appium-roku-driver"
+        version: "2.0.8"
+
+dev-us-sny-9-proxy-29-lin.headspin.io:
+  secret: 8e9b61fa-f482-4aa6-8bc4-12750f6a13ce
+  external_port: 7308
+  devices:
+    - roku
+  appium_drivers:
+    - roku:
+      - sourceType: npm
+        package: "@headspinio/appium-roku-driver"
+        version: "2.6.0"
+
+dev-us-sny-9-proxy-31-lin.headspin.io:
+  secret: c89305c3-6474-4d64-8fb2-85553087bb15
+  external_port: 7309
+  devices:
+    - roku
+  appium_drivers:
+    - roku:
+      - sourceType: npm
+        package: "@headspinio/appium-roku-driver"
+        version: "2.6.0"
+
+dev-us-sny-9-proxy-32-lin.headspin.io:
+  secret: f47e0dc6-2bdd-466a-bd95-8013a138ca91
+  external_port: 7310
+  devices:
+    - roku
+  appium_drivers:
+    - roku:
+      - sourceType: npm
+        package: "@headspinio/appium-roku-driver"
+        version: "2.6.0"
+
+dev-us-sny-9-proxy-33-lin.headspin.io:
+  secret: 8bb1b21c-e00d-4d8f-84a3-bb0f85d53cbb
+  external_port: 7311
+  devices:
+    - roku
+  appium_drivers:
+    - roku:
+      - sourceType: npm
+        package: "@headspinio/appium-roku-driver"
+        version: "2.6.0"
+
+dev-us-sny-9-proxy-34-lin.headspin.io:
+  secret: 693bbdfd-0175-429b-8d4e-520fe540ce3c
+  external_port: 7312
+  devices:
+    - roku
+  appium_drivers:
+    - roku:
+      - sourceType: npm
+        package: "@headspinio/appium-roku-driver"
+        version: "2.6.0"
+
+dev-us-sny-11-proxy-3-lin.headspin.io:
+  secret: 795b9174-38cc-4156-b1d6-09f2d5f08e50
+  external_port: 7301
+  devices:
+    - webos
+  appium_drivers:
+    - webos:
+      - sourceType: npm
+        package: appium-lg-webos-driver
+        version: "0.3.1"
+
+dev-us-sny-11-proxy-4-lin.headspin.io:
+  secret: b9417125-2d75-4be2-921e-20ee8bc1eb19
+  external_port: 7302
+  devices:
+    - webos
+    - tizentv
+  appium_drivers:
+    - webos:
+      - sourceType: npm
+        package: appium-lg-webos-driver
+        version: "0.3.1"
+    - tizentv:
+      - sourceType: npm
+        package: appium-tizen-tv-driver
+        version: "0.11.0"
+
+dev-us-sny-11-proxy-5-lin.headspin.io:
+  secret: 1b722c6f-3bce-4a1a-aa83-0a09e846c78a
+  external_port: 7303
+  devices:
+    - roku
+    - tizentv
+    - viziotv
+  appium_drivers:
+    - roku:
+      - sourceType: npm
+        package: "@headspinio/appium-roku-driver"
+        version: "2.6.0"
+    - tizentv:
+      - sourceType: npm
+        package: appium-tizen-tv-driver
+        version: "0.11.0"
+    - vizio:
+      - sourceType: local
+        package: appium-vizio-driver
+
+dev-us-sny-11-proxy-6-lin.headspin.io:
+  secret: e42a7fe1-348a-466e-a479-94ca69d64192
+  external_port: 7304
+  devices:
+    - roku
+    - tizentv
+    - viziotv
+  appium_drivers:
+    - roku:
+      - sourceType: npm
+        package: "@headspinio/appium-roku-driver"
+        version: "2.6.0"
+    - tizentv:
+      - sourceType: npm
+        package: appium-tizen-tv-driver
+        version: "0.11.0"
+    - vizio:
+      - sourceType: local
+        package: appium-vizio-driver
+
+dev-us-sny-11-proxy-7-lin.headspin.io:
+  secret: 891fd541-cbf7-4987-a89e-1b15efff9a34
+  external_port: 7305
+  devices:
+    - roku
+    - tizentv
+  appium_drivers:
+    - roku:
+      - sourceType: npm
+        package: "@headspinio/appium-roku-driver"
+        version: "2.6.0"
+    - tizentv:
+      - sourceType: npm
+        package: appium-tizen-tv-driver
+        version: "0.11.0"
+
+dev-us-sny-9-proxy-37-lin.headspin.io:
+  secret: 597192bf-015f-46b8-a772-e86b7d15555f
+  external_port: 7313
+  devices:
+    - roku
+  appium_drivers:
+    - roku:
+      - sourceType: npm
+        package: "@headspinio/appium-roku-driver"
+        version: "2.6.0"
+
+dev-ca-tor-0-proxy-25-lin.headspin.io:
+  secret: 4df30836-b480-4061-9f86-8e98c12c9c6e
+  external_port: 7303
+  devices:
+    - webos
+    - tizentv
+  appium_drivers:
+    - webos:
+      - sourceType: npm
+        package: appium-lg-webos-driver
+        version: "0.2.0"
+    - tizentv:
+      - sourceType: npm
+        package: appium-tizen-tv-driver
+        version: "0.11.0"
+
+dev-us-sny-6-proxy-2-lin.headspin.io:
+  secret: 267b03b1-73e8-4d7f-b0cc-8070d882a2bb
+  external_port: 7301
+  devices:
+    - roku
+  appium_drivers:
+    - roku:
+      - sourceType: npm
+        package: "@headspinio/appium-roku-driver"
+        version: "2.6.0"
+
+dev-us-sny-11-proxy-8-lin.headspin.io:
+  secret: 03dc3fc3-7ca8-4fda-9819-9de60287c09a
+  external_port: 7306
+  devices:
+    - webos
+    - tizentv
+  appium_drivers:
+    - webos:
+      - sourceType: npm
+        package: appium-lg-webos-driver
+        version: "0.3.1"
+    - tizentv:
+      - sourceType: npm
+        package: appium-tizen-tv-driver
+        version: "0.11.0"
+
+dev-us-sny-11-proxy-9-lin.headspin.io:
+  secret: 6d3b8cbb-79c0-4376-8284-96b34405d830
+  external_port: 7307
+  devices:
+    - webos
+  appium_drivers:
+    - webos:
+      - sourceType: npm
+        package: appium-lg-webos-driver
+        version: "0.3.1"
+
+dev-us-sny-9-proxy-18-lin.headspin.io:
+  secret: 58013c85-ac03-4c7d-abd8-2a012441ead8
+  external_port: 7314
+  devices:
+    - tizentv
+  appium_drivers:
+    - tizentv:
+      - sourceType: npm
+        package: appium-tizen-tv-driver
+        version: "0.11.0"
+
+dev-us-sny-9-proxy-19-lin.headspin.io:
+  secret: 8fc341cd-d4b2-48e5-9fd7-f35f9d89ac96
+  external_port: 7315
+  devices:
+    - tizentv
+  appium_drivers:
+    - tizentv:
+      - sourceType: npm
+        package: appium-tizen-tv-driver
+        version: "0.11.0"
+
+dev-us-sny-9-proxy-20-lin.headspin.io:
+  secret: 02e16547-6fe0-47f5-99de-2130722d2f7f
+  external_port: 7316
+  devices:
+    - tizentv
+  appium_drivers:
+    - tizentv:
+      - sourceType: npm
+        package: appium-tizen-tv-driver
+        version: "0.11.0"
+
+dev-us-sny-9-proxy-21-lin.headspin.io:
+  secret: c83d6957-9c2a-4c3c-b7aa-a11fe834b346
+  external_port: 7317
+  devices:
+    - tizentv
+  appium_drivers:
+    - tizentv:
+      - sourceType: npm
+        package: appium-tizen-tv-driver
+        version: "0.11.0"
+
+dev-ca-tor-2-proxy-22-lin.headspin.io:
+  secret: 2e0c4024-b9a9-46cd-b42a-ed24242629d0
+  external_port: 7302
+  devices:
+    - tizentv
+  appium_drivers:
+    - tizentv:
+      - sourceType: npm
+        package: appium-tizen-tv-driver
+        version: "0.11.0"
+
+dev-us-sny-11-proxy-2-lin.headspin.io:
+  secret: 28e4e7cb-aafa-48bc-b762-1d432267cb97
+  external_port: 7308
+  devices:
+    - tizentv
+    - viziotv
+  appium_drivers:
+    - tizentv:
+      - sourceType: npm
+        package: appium-tizen-tv-driver
+        version: "0.11.0"
+    - vizio:
+      - sourceType: local
+        package: appium-vizio-driver
+
+dev-us-sny-11-proxy-1-lin.headspin.io:
+  secret: c274fe69-9e29-492d-9c35-3424abf2ad4b
+  external_port: 7309
+  devices:
+    - viziotv
+    - tizentv
+  appium_drivers:
+    - vizio:
+      - sourceType: local
+        package: appium-vizio-driver
+    - tizentv:
+      - sourceType: npm
+        package: appium-tizen-tv-driver
+        version: "0.11.0"
+
+dev-ca-tor-2-proxy-17-lin.headspin.io:
+  secret: b506bc30-5795-4336-99de-58b810142515
+  external_port: 7303
+  devices:
+    - viziotv
+  appium_drivers:
+    - vizio:
+      - sourceType: local
+        package: appium-vizio-driver
+
+dev-us-pao-20-proxy-28-lin.headspin.io:
+  secret: d1c150b8-2d8a-478a-8277-eb76fd2f2434
+  external_port: 7310
+  devices:
+    - viziotv
+  appium_drivers:
+    - vizio:
+      - sourceType: local
+        package: appium-vizio-driver
+
+dev-us-sny-11-proxy-10-lin.headspin.io:
+  secret: 2ee5625b-6e5d-42f1-aff5-f7e7baf3d91c
+  external_port: 7310
+  devices:
+    - tizentv
+  appium_drivers:
+    - tizentv:
+      - sourceType: npm
+        package: appium-tizen-tv-driver
+        version: "0.11.0"

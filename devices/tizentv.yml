@@ -1,0 +1,766 @@
+# template:
+#
+# dev-us-pao-7-proxy-1-lin.headspin.io:  # host address
+#     UN55AU8000FXZA1:  # the device serial as a key
+#         # Mandatory
+#         # The tv device's ip address. The ip address should be accessible from the host's pbox.
+#         ip: 192.168.11.53
+#         # Mandatory
+#         mac_address: 8c:ea:48:aa:aa:aa  # the device's MAC address
+#         # Optional
+#         # The device's powercycle url. It needs username/password.
+#         powercycle_post_url: http://admin:admin@192.168.11.53/cmd.cgi?$A4%201
+#         # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+#         # Optional
+#         model_name: TU8001
+#         # Optional
+#         model_code: UN55TU8000FA4K
+#         # Optional
+#         serial: UN55AU8000FXZA
+#         # Optional
+#         software_version: T-NKLAKUC-2101.0, BT - S
+#         # Optional
+#         device_size: 55
+#         # Optional
+#         network_type: 'LAN'
+#         # Optional
+#         # Only required to create a signing profile
+#         duid: ZPCA3YKLTREFA
+#         # Optional
+#         tv_device_id: 000000020F41EB00  # Probably manufacture device id
+
+dev-ca-tor-0-proxy-5-lin.headspin.io:
+    09PC3CYR00495W1:  # device_id that should be unique in headspin service
+        ip: 192.168.21.239
+        mac_address: 64:07:f6:de:38:f6
+        powercycle_post_url: http://admin:admin@192.168.21.239/cmd.cgi?$A4%201
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: TU8000
+        model_code: UN55TU8000FXZC
+        serial: 09PC3CYR00495W
+        software_version: T-NKLAKUC-2101.0, BT - S
+        device_size: 55
+        network_type: 'LAN'
+        duid: RLCFC353YMG3O
+        # not used
+        tv_device_id: 000000020F41EBE2  # Probably manufacture device id
+
+# dev-us-pao-7-proxy-1-lin.headspin.io:
+#     UN55AU8000FXZA1:  # device_id that should be unique in headspin service
+#         ip: 192.168.11.53
+#         mac_address: 8c:ea:48:aa:aa:aa
+#         # FIXME?
+#         powercycle_post_url: http://admin:admin@192.168.11.53/cmd.cgi?$A4%201
+#         # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+#         model_name: TU8001
+#         model_code: UN55TU8000FA4K1
+#         serial: 087K3CTN700433K
+#         software_version: T-NKLAKUC-2101.0, BT - S
+#         device_size: 55
+#         network_type: 'LAN'
+#         # not used
+#         tv_device_id: 000000020F41EB00  # Probably manufacture device id
+
+# Discovery / WBD Samsung Tvs
+dev-us-pao-20-proxy-9-lin.headspin.io:
+    0BRK3CYRA00102J:  # "SamsungTV_US_1"
+        ip: 10.120.1.230
+        mac_address: 7c:0a:3f:eb:25:1d
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: AU8000
+        model_code: UN50AU8000FXZA
+        serial: 0BRK3CYRA00102J
+        software_version: T-NKLAAKUC-2001.3
+        device_size: 50
+        network_type: 'LAN'
+        duid: 7XCEPZPT3FWMU
+        # not used
+        tv_device_id: 000000020fc9161a # Probably manufacture device id
+    0BRW3CARC00856M:  # "SamsungTV_US_4"
+        ip: 10.120.1.190
+        mac_address: 04:b9:e3:f3:57:78
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: AU8000
+        model_code: UN55AU8000FXZA
+        serial: 0BRW3CARC00856M
+        software_version: T-NKLAAKUC-2001.3
+        device_size: 55
+        network_type: 'LAN'
+        duid: XTCAXEUHR6XPO
+        # not used
+        tv_device_id: YXZUT673ESESF # Probably manufacture device id
+    # 0BRK3CXRA07646Y:  # "SamsungTV_US_4"
+    #     ip: 10.120.1.163
+    #     mac_address: 7c:0a:3f:02:b0:37
+    #     # FIXME?
+    #     powercycle_post_url: null
+    #     # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+    #     model_name: AU8000
+    #     model_code: UN50AU8000FXZA
+    #     serial: 0BRK3CXRA07646Y
+    #     software_version: T-KSU2EAKUC-2130.8, BT-S
+    #     device_size: 50
+    #     network_type: 'LAN'
+    # 0BRK3CTRA00063X:  # device_id that should be unique in headspin service
+    #     ip: 10.120.3.68
+    #     mac_address: 7c:0a:3f:eb:02:b2
+    #     # FIXME?
+    #     powercycle_post_url: null
+    #     # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+    #     model_name: AU8000
+    #     model_code: UN50AU8000FXZA
+    #     serial: 0BRK3CTRA00063X
+    #     software_version: T-NKLAAKUC-2130.8, BT-S
+    #     device_size: 50
+    #     network_type: 'LAN'
+#     0BRW3CXRB11083D:  # "SamsungTV_GB_1"
+#         ip: 10.120.1.106
+#         mac_address: c0:23:8d:b3:04:e9
+#         # FIXME?
+#         powercycle_post_url: null
+#         # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+#         model_name: AU8000
+#         model_code: UN50AU8000FXZA
+#         serial: 0BRW3CXRB11083D
+#         software_version: T-NKLAAKUC-2001.3
+#         device_size: 50
+#         network_type: 'LAN'
+#         # not used
+#         tv_device_id: JHCLTHZVYPN6K # Probably manufacture device id
+#     0BRK3CXT204563E:  # "SamsungTV_GB_2"
+#         ip: 10.120.1.142
+#         mac_address: d0:c2:4e:4d:34:b7
+#         # FIXME?
+#         powercycle_post_url: null
+#         # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+#         model_name: AU8000
+#         model_code: UN50AU8000FXZA
+#         serial: 0BRK3CXT204563E
+#         software_version: T-NKLAAKUC-2001.3
+#         device_size: 50
+#         network_type: 'LAN'
+#         # not used
+#         tv_device_id: 000000020ffd84c1 # Probably manufacture device id
+#    0BRK3CXRA07839Y:  # device_id that should be unique in headspin service
+#        ip: 10.120.3.65
+#        mac_address: 7c:0a:3f:02:af:d2
+#        # FIXME?
+#        powercycle_post_url: null
+#        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+#        model_name: AU8000
+#        model_code: UN50AU8000FXZA
+#        serial: 0BRK3CXRA07839Y
+#        software_version: T-KSU2EAKUC-2101.0, BT - S
+#        device_size: 55
+#        network_type: 'LAN'
+#        duid: H3CEPZPTK6FJO
+#        # not used
+#        tv_device_id: PBZPIFWCMAP4L  # Probably manufacture device id
+#    # Warner Brothers Discovery Samsung TV 1
+    # Warner Brothers Discovery Samsung TV 2
+
+dev-us-pao-7-proxy-2-lin.headspin.io:
+    087K3CTN7004332:  # device_id that should be unique in headspin service
+        ip: 192.168.11.49
+        mac_address: 44:5c:e9:6e:9b:b8
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: TU8001
+        model_code: UN55AU8000FXZA2
+        serial: 087K3CTN7004332
+        software_version: T-NKLAKUC-2101.0, BT - S
+        device_size: 55
+        network_type: 'LAN'
+        duid: XTCGOF7ZU3QQG
+        # not used
+        tv_device_id: 000000020F41EB00  # Probably manufacture device id
+
+dev-ca-tor-2-proxy-14-lin.headspin.io:
+    05R23K3NB01557Y:
+        ip: 10.120.1.196
+        mac_address: 68:72:c3:1f:83:41
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: T5300A
+        model_code: UA32T5300AUXZN
+        serial: 05R23K3NB01557Y
+        software_version: T-KTS2UABC-2502.0
+        device_size: 32
+        network_type: 'LAN'
+        duid: SHCFU2PBAZDRM
+    BZ8434SNB12111Z:
+        ip: 10.120.1.226
+        mac_address: bc:7e:8b:78:1b:23
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: M4500
+        model_code: UN32M4500BFXZA
+        serial: BZ8434SNB12111Z
+        software_version: T-KTS2AKUC-2085.2
+        device_size: 32
+        network_type: 'LAN'
+        duid: ZPCPHIWA3CM46
+
+dev-us-sny-9-proxy-3-lin.headspin.io:
+    09MN3CGW300343P:  # device_id that should be unique in headspin service
+        ip: 10.120.1.36
+        mac_address: bc:45:5b:2d:28:60
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: TU7000
+        model_code: UN50TU7000FXZA
+        serial: 09MN3CGW300343P
+        software_version: T-KSU2EAKUC-2210.0
+        device_size: 55
+        network_type: 'LAN'
+        duid: MTCPHAB7VDDHC
+    0BRS3CHT404861Y:  # device_id that should be unique in headspin service
+        ip: 10.120.1.39
+        mac_address: 54:44:a3:11:69:db
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: AU8000
+        model_code: UN43AU8000FXZA
+        serial: 0BRS3CHT404861Y
+        software_version: T-KSU2EAKUC-2210.0, BT-S
+        device_size: 43
+        network_type: 'LAN'
+        duid: CPCHYAI3B3VTW
+    05PN3CUHB02361T:  # device_id that should be unique in headspin service
+        ip: 10.120.1.37
+        mac_address: e4:7d:bd:c6:db:31
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: KU7000
+        model_code: UN40KU7000
+        serial: 05PN3CUHB02361T
+        software_version: T-JZMAKUS-1007
+        device_size: 40
+        network_type: 'LAN'
+
+dev-us-pao-7-proxy-33-lin.headspin.io:
+    0F1Z3CTW602388K:  # device_id that should be unique in headspin service
+        ip: 192.168.11.152
+        mac_address: e0:03:6b:96:e7:a9
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: CU8000
+        model_code: UN50CU8000FXZA
+        serial: 0F1Z3CTW602388K
+        software_version: T-X22UDCAKUC-1212.6, E0300025, BT - S
+        device_size: 50
+        network_type: 'LAN'
+        duid: JHCI7KNSKIVVS
+
+dev-us-pao-20-proxy-26-lin.headspin.io:
+    0BRK3CXT204568K:
+        ip: 10.120.1.182
+        mac_address: d0:c2:4e:4d:34:b6
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: AU8000
+        model_code: UN50AU8000FXZA
+        serial: OBRK3CXT204568K
+        software_version: T-NKLAAKUC-2141.2, BT-S
+        device_size: 50
+        network_type: 'LAN'
+        duid: RLCKEHBTQLLJW
+    # BZ8434ST2001832:
+    #     ip: 10.120.1.64
+    #     mac_address: 80:8a:bd:a4:31:99
+    #     # FIXME?
+    #     powercycle_post_url: null
+    #     # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+    #     model_name: M4500
+    #     model_code: UN32M4500BFXZA
+    #     serial: BZ8434ST2001832
+    #     software_version: T-KTS2AKUC-2501.1
+    #     device_size: 32
+    #     network_type: 'LAN'
+    #     duid: JHCNK7JI3TQ51
+    BZ8434SW813430N:
+        ip: 10.120.1.137
+        mac_address: f8:4e:58:fb:70:29
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: M4500
+        model_code: UN32M4500BFXZA
+        serial: BZ8434SW813430N
+        software_version: T-KTS2AKUC-2401.0
+        device_size: 32
+        network_type: 'LAN'
+        duid: JHCJST3N2IOJC
+
+dev-us-sny-11-proxy-6-lin.headspin.io:
+    0ELF3CHW705966Z:
+        ip: 192.168.11.54
+        mac_address: f8:4e:58:88:5a:ac
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: TU690T
+        model_code: UN43TU690TFXZA
+        serial: OELF3CHW705966Z
+        software_version: T-KSU2EAKUC-2141.2
+        device_size: 43
+        network_type: 'LAN'
+        duid: BDCJST3NSH2K4
+    0ELF3CHW804763K:
+        ip: 192.168.11.217
+        mac_address: f8:4e:58:f0:b2:b0
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: TU690T
+        model_code: UN43TU690TFXZA
+        serial: 0ELF3CHW804763K
+        software_version: T-KSU2EAKUC-2210.0
+        device_size: 43
+        network_type: 'LAN'
+        duid: MTCJST3N3X5T4
+
+dev-us-sny-9-proxy-2-lin.headspin.io:
+    0F4D3CXW400136V:
+        ip: 10.120.1.11
+        mac_address: 68:fc:ca:60:44:cd
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: CU8000
+        model_code: UN55CU8000FXZA
+        serial: 0F4D3CXW400136V
+        software_version: T-X22UDCAKUC-1310.3, E0371400, BT - S
+        device_size: 55
+        network_type: 'LAN'
+        duid: 7XCFV00NPZT5K
+
+dev-us-sny-9-proxy-27-lin.headspin.io:
+    0DH93CRT403167R:
+        ip: 10.120.1.178
+        mac_address: 54:44:a3:21:ae:4a
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: LS03B
+        model_code: QN43LS03BAFXZA
+        serial: 0DH93CRT403167R
+        software_version: T-PTMAKUC-1602.3, BT-S
+        device_size: 43
+        network_type: 'LAN'
+        duid: 43CHYAI3ENN6S
+
+dev-us-sny-11-proxy-2-lin.headspin.io:
+    0F0H3CVW807539W:
+        ip: 192.168.11.113
+        mac_address: 1c:af:4a:da:cf:e1
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: Q60C
+        model_code: QN43Q60CAFXZA
+        serial: 0F0H3CVW807539W
+        software_version: E0301500, BT-S
+        device_size: 43
+        network_type: 'LAN'
+        duid: SHCB2DGFQVILQ
+    06503CTH614037V:
+        ip: 192.168.11.201
+        mac_address: cc:b1:1a:d4:62:bb
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: KU6600
+        model_code: UN55KU6600
+        serial: 06503CTH614037V
+        software_version: T-JZL6AKUC-1260.1, BT-S
+        device_size: 55
+        network_type: 'LAN'
+        duid: CPCLEH4SRWKDC
+
+dev-us-sny-11-proxy-4-lin.headspin.io:
+    BZ8434SW407225Y:
+        ip: 192.168.11.181
+        mac_address: 68:fc:ca:2e:85:e9
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: M4500
+        model_code: UN32M4500BFXZA
+        serial: BZ8434SW407225Y
+        software_version: T-KTS2AKUC-2401.0
+        device_size: 32
+        network_type: 'LAN'
+        duid: JHCFVOONDLZFK
+    BZ8434SW514109E:
+        ip: 192.168.11.216
+        mac_address: e0:03:6b:16:3a:b6
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: M4500
+        model_code: UN32M4500BFXZA
+        serial: BZ8434SW514109E
+        software_version: T-KTS2AKUC-2501.1
+        device_size: 32
+        network_type: 'LAN'
+        duid: RLCI7KNSRKHLW
+
+dev-us-sny-11-proxy-7-lin.headspin.io:
+    0C0Z3CXW104734N:
+        ip: 192.168.11.135
+        mac_address: 1c:86:9a:92:ef:66
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: TU7000
+        model_code: UN50TU7000BXZA
+        serial: 0C0Z3CXW104734N
+        software_version: T-KUEINTV-1107
+        device_size: 50
+        network_type: 'LAN'
+        duid: RLCB2NS24TTGI
+
+dev-us-sny-9-proxy-18-lin.headspin.io:
+    0BRW3CTT304369T:
+        ip: 10.120.1.156
+        mac_address: a0:d0:5b:a9:f7:9c
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: AU8000
+        model_code: UN55AU8000FXZA
+        serial: 0BRW3CTT304369T
+        software_version: T-NKLAAKUC-2210.0, BT-S
+        device_size: 55
+        network_type: 'LAN'
+        duid: BDC0GBCP02QHG
+    0BRW3CTT304372A:
+        ip: 10.120.1.249
+        mac_address: a0:d0:5b:a9:f1:9d
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: AU8000
+        model_code: UN55AU8000FXZA
+        serial: 0BRW3CTT304372A
+        software_version: T-NKLAAKUC-2210.0, BT-S
+        device_size: 55
+        network_type: 'LAN'
+        duid: 7XC0GBCP02S5E
+    0BRW3CTT304373J:
+        ip: 10.120.1.243
+        mac_address: a0:d0:5b:a9:f1:9c
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: AU8000
+        model_code: UN55AU8000FXZA
+        serial: 0BRW3CTT304373J
+        software_version: T-NKLAAKUC-2141.2, BT-S
+        device_size: 55
+        network_type: 'LAN'
+        duid: BDC0GBCP02S5G
+
+dev-us-sny-9-proxy-19-lin.headspin.io:
+    0BRK3CXT204563E:  # device_id that should be unique in headspin service
+        ip: 10.120.1.80
+        mac_address: d0:c2:4e:4d:34:b7
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: AU8000
+        model_code: UN50AU8000FXZA
+        serial: 0BRK3CXT204563E
+        software_version: T-NKLAAKUC-2210.0, BT-S
+        device_size: 50
+        network_type: 'LAN'
+        duid: P7CKEHBTQLLJU
+    0BRK3CTRA00070L:
+        ip: 10.120.1.157
+        mac_address: 7c:0a:3f:eb:02:9c
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: AU8000
+        model_code: UN50AU8000FXZA
+        serial: 0BRK3CTRA00070L
+        software_version: T-NKLAAKUC-2210.0, BT-S
+        device_size: 50
+        network_type: 'LAN'
+        duid: BDCEPZPT3FPAG
+    0BRK3CXRA07838R:
+        ip: 10.120.1.158
+        mac_address: 7c:0a:3f:02:af:d9
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: AU8000
+        model_code: UN50AU8000FXZA
+        serial: 0BRK3CXRA07838R
+        software_version: T-KSU2EAKUC-2210.0, BT-S
+        device_size: 50
+        network_type: 'LAN'
+        duid: JHCEPZPTK6FJQ
+    0BRK3CYRA00103P:
+        ip: 10.120.1.250
+        mac_address: 7c:0a:3f:eb:31:aa
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: AU8000
+        model_code: UN50AU8000FXZA
+        serial: 0BRK3CYRA00103P
+        software_version: T-NKLAAKUC-2210.0, BT-S
+        device_size: 50
+        network_type: 'LAN'
+        duid: 43CEPZPT3FY7W
+
+dev-us-sny-9-proxy-20-lin.headspin.io:
+    0BRK3CVRA10046L:  # device_id that should be unique in headspin service
+        ip: 10.120.1.74
+        mac_address: 7c:0a:3f:44:c6:f1
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: AU8000
+        model_code: UN50AU8000FXZA
+        serial: 0BRK3CVRA10046L
+        software_version: T-KSUTEAKUC-2210.0, BT-S
+        device_size: 50
+        network_type: 'LAN'
+        duid: SHCEPZPTHZ6JG
+    0BRK3CXRA07842X:
+        ip: 10.120.1.168
+        mac_address: 7c:0a:3f:02:af:e1
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: AU8000
+        model_code: UN50AU8000FXZA
+        serial: 0BRK3CXRA07842X
+        software_version: T-KSU2EAKUC-2210.0, BT-S
+        device_size: 55
+        network_type: 'LAN'
+        duid: SHCEPZPTK6FLQ
+
+dev-us-sny-11-proxy-5-lin.headspin.io:
+    0ELF3CHW804703W:
+        ip: 192.168.11.149
+        mac_address: 1c:af:4a:4b:5c:3a
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: TU690T
+        model_code: UN43TU690TFXZA
+        serial: 0ELF3CHW804703W
+        software_version: T-KSU2EAKUC-2210.0
+        device_size: 43
+        network_type: 'LAN'
+        duid: 43CB2DGFI4Q4Q
+    0ELF3CHW705954A:
+        ip: 192.168.11.192
+        mac_address: f8:43:58:88:5b:0d
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: TU690T
+        model_code: UN43TU690TFXZA
+        serial: 0ELF3CHW705954A
+        software_version: T-KSU2EAKUC-2210.0
+        device_size: 43
+        network_type: 'LAN'
+        duid: 7XCJST3NSH27C
+
+dev-ca-tor-2-proxy-22-lin.headspin.io:
+    BZ8134SNB12288L:
+        ip: 10.120.1.194
+        mac_address: bc:78e:8b:77:2c:12
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: N5300
+        model_code: UN32N5300
+        serial: BZ8134SNB12288L
+        software_version: T-KTSNAKUC-1341.2
+        device_size: 32
+        network_type: 'LAN'
+        duid: H3CPHIWA2EQPG
+    095G3CER603974W:
+        ip: 10.120.1.217
+        mac_address: 10:2b:41:9b:21:3e
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: Q60A
+        model_code: QN32Q60AAFXZA
+        serial: 095G3CER603974W
+        software_version: T-KSU2EAKUC-2210.0
+        device_size: 32
+        network_type: 'LAN'
+        duid: KLCBNEQKXBVD4
+    0BZW3CER701563J:
+        ip: 10.120.1.211
+        mac_address: 80:47:86:34:76:30
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: Q50R
+        model_code: QN32Q50RAFXZA
+        serial: 0BZW3CER701563J
+        software_version: T-MSLAKUC-1406.3, BT - S
+        device_size: 32
+        network_type: 'LAN'
+        duid: MTCNLQ72J6ESM
+    BZ8534SRB08757V:
+        ip: 10.120.1.239
+        mac_address: c0:23:8d:be:d8:08
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: M4500
+        model_code: UN32M4500
+        serial: BZ8534SRB08757V
+        software_version: T-KTSNAKUC-1341.2
+        device_size: 32
+        network_type: 'LAN'
+        duid: XTCLTHZVZGHSM
+    BZ8534STB05441T:
+        ip: 10.120.1.149
+        mac_address: 1c:86:9a:73:ca:14
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: M4500
+        model_code: UN32M4500BFXZC
+        serial: BZ8534STB05441T
+        software_version: T-KTS2AKUC-2501.1
+        device_size: 32
+        network_type: 'LAN'
+        duid: 2DCB2NS2M5TVM
+
+dev-us-sny-11-proxy-8-lin.headspin.io:
+    0LNS3HDX204692B:
+        ip: 192.168.11.106
+        mac_address: b0:e4:5c:1d:3f:2c
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: CU7100
+        model_code: UE43CU7100KXXU
+        serial: 0LNS3HDX204692B
+        software_version: T-KSU2ECDEUC-1310.3
+        device_size: 43
+        network_type: 'LAN'
+        duid: BDCPQL4LSXMQM
+    0E0J3HKKA04607T:
+        ip: 192.168.11.174
+        mac_address: fc:03:9f:7a:7e:5e
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: Q6F
+        model_code: QE49Q6FNA
+        serial: 0E0J3HKKA04607T
+        software_version: T-KTM2DEUC-1334.0
+        device_size: 49
+        network_type: 'LAN'
+        duid: KLCJ72JNDOSPI
+
+dev-us-sny-9-proxy-21-lin.headspin.io:
+    0BRW3CXRB11083D:
+        ip: 10.120.1.162
+        mac_address: c0:23:8d:b3:04:e9
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: AU8000
+        model_code: UN50AU8000FXZA
+        serial: 0BRW3CXRB11083D
+        software_version: T-NKLAAKUC-2210.0, BT-S
+        device_size: 50
+        network_type: 'LAN'
+        duid: JHCLTHZVYPN6K
+
+dev-us-sny-11-proxy-1-lin.headspin.io:
+    0F0H3CVW606329W:
+        ip: 192.168.11.49
+        mac_address: f8:4e:58:6a:55:65
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: Q60CA
+        model_code: QN43Q60CAFXZA
+        serial: 0F0H3CVW606329W
+        software_version: T-NKLCAKUC-1220.9 , E0301500, BT-S
+        device_size: 43
+        network_type: 'LAN'
+        duid: EXCJST3NCC0YM
+    0F0H3CVW807533A:
+        ip: 192.168.11.234
+        mac_address: 1c:af:4a:da:cf:8c
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: Q60CA
+        model_code: QN43Q60CAFXZA
+        serial: 0F0H3CVW807533A
+        software_version: T-NKLCAKUC-1310.3, E0301500, BT-S
+        device_size: 43
+        network_type: 'LAN'
+        duid: BDCB2DGFQVI0Q
+    0F0H3CVW807534E:
+        ip: 192.168.11.47
+        mac_address: 1c:af:4a:da:ce:2d
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: Q60CA
+        model_code: QN43Q60CAFXZA
+        serial: 0F0H3CVW807534E
+        software_version: T-NKLCAKUC-1310.3, E0371400, BT-S
+        device_size: 43
+        network_type: 'LAN'
+        duid: 7XCB2DGFQVI30
+
+dev-us-sny-11-proxy-10-lin.headspin.io:
+    0LNS3HDX304135B:
+        ip: 192.168.11.189
+        mac_address: b8:b4:09:4a:c0:0a
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: CU7100
+        model_code: UE43CU7100KXXU
+        serial: 0LNS3HDX304135B
+        software_version: T-KSU2ECDEUC-1402.8
+        device_size: 43
+        network_type: 'LAN'
+        duid: 43CPLWH3SZM2K
+
+dev-ca-tor-0-proxy-25-lin.headspin.io:
+    0E0J3HKKA04607T:
+        ip: 192.168.21.172
+        mac_address: fc:03:9f:7a:7e:5e
+        # FIXME?
+        powercycle_post_url: null
+        # Not necessary, but can be used for device info for HeadSpin internal use to show them to customers.
+        model_name: Q6FN
+        model_code: QE49Q6FNATXXU
+        serial: 0E0J3HKKA04607T
+        software_version: T-KTM2DEUC-1341.2
+        device_size: 49
+        network_type: 'LAN'
+        duid: KLCJ72JNDOSPI

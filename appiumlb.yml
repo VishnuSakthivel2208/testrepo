@@ -1,0 +1,4 @@
+codedeploy:
+  regions:
+    - us-west-2
+    - ap-south-2

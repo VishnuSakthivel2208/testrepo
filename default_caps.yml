@@ -1,0 +1,13 @@
+default:
+  headspin.capture: False
+
+# role_{role_id}: {caps}
+# org_{org_id}: {caps}
+
+# walmart appium
+org_e2dacbb3-3a2c-11e8-baae-b8e85639d2fe:
+  headspin.capture: True
+
+# walmart-wipro-dedicated
+org_41bf7240-2d67-11e8-ab08-c4b301c91fe1:
+  headspin.capture: True

@@ -1,0 +1,117 @@
+# TODO: remove `mac:`
+dev-ca-tor-2-proxy-14-lin.headspin.io:
+    101MXUNDM110:
+        mac: B4:B2:91:2C:25:67  # TODO: remove later
+        mac_address: B4:B2:91:2C:25:67
+    106MXFV6287:
+        mac: B4:B2:91:DB:0E:53  # TODO: remove later
+        mac_address: B4:B2:91:DB:0E:53
+    107MXZJ2Y533:
+        mac: B0:37:95:16:AA:AA  # TODO: remove later
+        mac_address: B0:37:95:16:AA:AA
+    LG-1:
+        mac: 74:E6:B8:51:FD:E1  # TODO: remove later
+        mac_address: 74:E6:B8:51:FD:E1
+
+dev-us-pao-20-proxy-9-lin.headspin.io:
+    111RMSS8A502:
+        mac: B0:37:95:ED:51:90  # TODO: remove later
+        mac_address: B0:37:95:ED:51:90
+
+dev-us-sny-9-proxy-2-lin.headspin.io:
+    302BXPS1K448:
+        mac: 7c:64:6c:5f:e5:a4  # TODO: remove later
+        mac_address: 7c:64:6c:5f:e5:a4
+    207MXDM39242:
+        mac: ac:5a:f0:29:a6:28 # TODO: remove later
+        mac_address: ac:5a:f0:29:a6:28
+    310MXXQ17490: # TV Serial Number
+        mac: 64:E4:A5:B5:DD:83  # TODO: remove later
+        mac_address: 64:E4:A5:B5:DD:83
+
+dev-us-sny-9-proxy-3-lin.headspin.io:
+    111RMHR5C129:
+        mac: B0:37:95:4E:49:71  # TODO: remove later
+        mac_address: B0:37:95:4E:49:71
+
+dev-us-sny-9-proxy-27-lin.headspin.io:
+    305RMYA8A082:
+        mac: 7C:64:6C:F4:DE:76  # TODO: remove later
+        mac_address: 7C:64:6C:F4:DE:76
+    305BXJA0M468:
+        mac: 7C:64:6C:0A:F8:43  # TODO: remove later
+        mac_address: 7C:64:6C:0A:F8:43
+    310MXFV9B899:
+        mac: 64:E4:A5:E7:BF:B3  # TODO: remove later
+        mac_address: 64:E4:A5:E7:BF:B3
+
+dev-us-sny-11-proxy-3-lin.headspin.io:
+    308RMAQG4312: # TV Serial Number
+        mac: 64:E4:A5:89:76:40  # TODO: remove later
+        mac_address: 64:E4:A5:89:76:40
+    308RMDZAL610: # TV Serial Number
+        mac: 64:ER:A5:7B:6D:CC  # TODO: remove later
+        mac_address: 64:ER:A5:7B:6D:CC
+    308RMVBG4319: # TV Serial Number
+        mac: 64:E4:A5:87:C2:21  # TODO: remove later
+        mac_address: 64:E4:A5:87:C2:21
+    308RMRHAL598: # TV Serial Number
+        mac: 64:E4:A5:7B:6E:76  # TODO: remove later
+        mac_address: 64:E4:A5:7B:6E:76
+    308RMVBAL599: # TV Serial Number
+        mac: 64:E4:A5:7B:6E:CB  # TODO: remove later
+        mac_address: 64:E4:A5:7B:6E:CB
+
+dev-us-sny-11-proxy-4-lin.headspin.io:
+    105RMHR85673: # TV Serial Number
+        mac: B4:B2:91:40:90:12  # TODO: remove later
+        mac_address: B4:B2:91:40:90:12
+    308RMPGAL600: # TV Serial Number
+        mac: 64:E4:A5:7B:6F:1E  # TODO: remove later
+        mac_address: 64:E4:A5:7B:6F:1E
+    105RMFP6Z627: # TV Serial Number
+        mac: B4:B2:91:C5:4C:26  # TODO: remove later
+        mac_address: B4:B2:91:C5:4C:26
+
+dev-ca-tor-0-proxy-25-lin.headspin.io:
+    309MXQA170841: # TV Serial Number
+        mac: 64:e4:a5:93:bf:ae  # TODO: remove later
+        mac_address: 64:e4:a5:93:bf:ae
+
+dev-us-pao-7-proxy-33-lin.headspin.io:
+    807RMJF81324: # TV Serial Number
+        mac: 78:5d:c8:de:d2:0f  # TODO: remove later
+        mac_address: 78:5d:c8:de:d2:0f
+
+dev-us-sny-11-proxy-8-lin.headspin.io:
+    309MXMT5A795: # TV Serial Number
+        mac: 64:E4:A5:84:46:85  # TODO: remove later
+        mac_address: 64:E4:A5:84:46:85
+    311MXPH3S720: # TV Serial Number
+        mac: 64:E4:A5:F8:CF:B4  # TODO: remove later
+        mac_address: 64:E4:A5:F8:CF:B4
+    311MXVW3S719: # TV Serial Number
+        mac: 64:E4:A5:F8:D0:75  # TODO: remove later
+        mac_address: 64:E4:A5:F8:D0:75
+
+dev-us-sny-11-proxy-9-lin.headspin.io:
+    311MXAY3B400: # TV Serial Number
+        mac: 64:E4:A5:F8:C1:5A  # TODO: remove later
+        mac_address: 64:E4:A5:F8:C1:5A
+    402MAHUEZV41: # TV Serial Number
+        mac: F8:01:B4:77:5A:A2  # TODO: remove later
+        mac_address: F8:01:B4:77:5A:A2
+    402TAPE0G680: # TV Serial Number
+        mac: F8:01:B4:37:8C:1D  # TODO: remove later
+        mac_address: F8:01:B4:37:8C:1D
+    402MAAKFJH68: # TV Serial Number
+        mac: F8:01:B4:77:A2:6F  # TODO: remove later
+        mac_address: F8:01:B4:77:A2:6F
+    309MAEGCZ644: # TV Serial Number
+        mac: 64:E4:A5:99:3F:BB  # TODO: remove later
+        mac_address: 64:E4:A5:99:3F:BB
+
+dev-ca-tor-0-proxy-5-lin.headspin.io:
+    312MXMT1U739: # TV Serial Number
+        mac: 64:E4:A5:F9:D6:90  # TODO: remove later
+        mac_address: 64:E4:A5:F9:D6:90

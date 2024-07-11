@@ -1,0 +1,57 @@
+#Example:
+#
+# canary-ca-tor-2-proxy-1-lin.headspin.io:
+#     VIZIO01:  # Here is 'device_id'.
+#         host: 192.168.11.238 # Mandatory TV IP (host=TV)
+#         device_port: 7345 # optional
+#         web_port: 9555  # optional
+
+dev-ca-tor-2-proxy-14-lin.headspin.io:
+    LBVAQPMW4600571:
+        host: 10.120.1.138
+
+dev-ca-tor-2-proxy-17-lin.headspin.io:
+    LIAIF9LX3003164:
+        host: 10.120.1.230
+
+dev-us-sny-11-proxy-1-lin.headspin.io:
+    LBVAG5PY5100404:
+        host: 192.168.11.45
+    LINID4PZ1506858:
+        host: 192.168.11.81
+
+dev-us-pao-20-proxy-28-lin.headspin.io:
+    42LTYWH6PY50036:
+        host: 10.120.1.217
+    42LTYWH6PY50047:
+        host: 10.120.1.233
+    LBVAM4LY3001855:
+        host: 10.120.1.43
+    LINIK4KY1603583:
+        host: 10.120.1.199
+
+dev-us-pao-20-proxy-26-lin.headspin.io:
+    LINIK4KY2007935:
+        host: 10.120.1.105
+    LTYWH6PY4250018:
+        host: 10.120.1.213
+
+dev-us-pao-20-proxy-9-lin.headspin.io:
+    45LTP5E6KX52769:
+        host: 10.120.1.238
+
+dev-us-sny-11-proxy-2-lin.headspin.io:
+    LBVAG5KX4902326:
+        host: 192.168.11.144
+    51LBVAG5PY02800:
+        host: 192.168.11.115
+    LBVAG5KX4702221:
+        host: 192.168.11.177
+
+dev-us-sny-11-proxy-5-lin.headspin.io:
+    16LINIQ8KZ15665:
+        host: 192.168.11.120
+
+dev-us-sny-11-proxy-6-lin.headspin.io:
+    LINIF94Z2308677:
+        host: 192.168.11.55

@@ -1,0 +1,438 @@
+# template:
+#
+# dev-us-pao-3-proxy-22-lin.headspin.io:
+#     YH001W336993: # the device serial as a key
+#         # Mandatory
+#         # The tv device's ip address. The ip address should be accessible from the host's pbox.
+#         host: 192.168.5.82
+#         # Mandatory
+#         # username and password to login to 'http://<host>:<webPort>'.
+#         user: rokudev
+#         pass: password
+#         # Optional
+#         # For 'Host' header if needed for tunneling or via DNS
+#         headerHost: 192.168.5.79
+#         # Optional
+#         device_size: 15
+#         # Optional
+#         network_type: 'LAN'
+
+# dev-us-pao-3-proxy-22-lin.headspin.io:
+#     YH001W336993: # Here is 'device_id'.
+#         host: 192.168.5.82 # rokuHost
+#         user: rokudev
+#         pass: password
+#         headerHost: 192.168.5.79  # optional
+#         device_size: 15  # optional
+#         network_type: 'LAN'  # optional
+#     YH006K060012: # Here is 'device_id'.
+#         host: 192.168.5.79 # rokuHost
+#         user: rokudev
+#         pass: password
+#         headerHost: 192.168.5.79  # optional
+#         device_size: 15  # optional
+#         network_type: 'LAN'  # optional
+#     YH006M704579: # Here is 'device_id'.
+#         host: 192.168.5.81 # rokuHost
+#         user: rokudev
+#         pass: password
+#         headerHost: 192.168.5.79  # optional
+#         device_size: 15  # optional
+#         network_type: 'LAN'  # optional
+#     SO2A21ANGE6T: # Here is 'device_id'.
+#         host: 10.120.5.130 # rokuHost
+#         user: rokudev
+#         pass: spinhead
+#         headerHost: 10.120.5.130 # optional
+#         device_size: 15  # optional
+#         network_type: 'LAN'  # optional
+
+
+dev-us-pao-3-proxy-23-lin.headspin.io:
+    YH003L579616: # Here is 'device_id'.
+        host: 192.168.5.83 # rokuHost
+        user: rokudev
+        pass: password
+        headerHost: 192.168.5.83  # optional
+        device_size: 15  # optional
+        network_type: 'LAN'  # optional
+    YH007Y075173: # Here is 'device_id'.
+        host: 192.168.5.85 # rokuHost
+        user: rokudev
+        pass: password
+        headerHost: 192.168.5.85  # optional
+        device_size: 15  # optional
+        network_type: 'LAN'  # optional
+
+dev-us-pao-3-proxy-12-lin.headspin.io:
+    YH005L229866:
+        host: 192.168.11.83
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+
+dev-ca-tor-2-proxy-14-lin.headspin.io:
+    X01000RUJAON:
+        host: 10.120.1.90
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+
+dev-us-pao-20-proxy-3-lin.headspin.io:
+    X01000ECNHDD:
+        host: 10.120.1.95
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+    # ABS CBN Phillpine
+    # X010003P8AHH:
+    #     host: 10.120.3.66
+    #     user: rokudev
+    #     pass: spinhead
+    #     network_type: 'LAN'
+    #Discovery
+    X01000GNGE6T:
+        host: 10.120.1.146
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+    X010001XM2V7:
+        host: 10.120.1.147
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+    X01000XCPX65:
+        host: 10.120.1.144
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+    X0100015VSS7:
+        host: 10.120.1.149
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+    X01000T6N749:
+        host: 10.120.1.150
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+    X01000Y58T4C:
+        host: 10.120.1.88
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+    X01000GVA620:
+        host: 10.120.1.128
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+    X01000AR46WV:
+        host: 10.120.1.126
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+
+dev-us-pao-20-proxy-2-lin.headspin.io:
+    #Discovery
+    X010005TUC39:
+        host: 10.120.1.127
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+    X01000FY065H:
+        host: 10.120.1.151
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+    X01000J6W0LS:
+        host: 10.120.1.72
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+    X01000NR73W8:
+        host: 10.120.1.87
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+    X0100085VUE7:
+        host: 10.120.1.206
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+
+
+# dev-us-sny-7-proxy-3-lin.headspin.io:
+#     # WDB roku: 84:ea:ed:a0:24:d9
+#     X010001WL6WL:
+#         host: 192.168.11.39
+#         user: rokudev
+#         pass: spinhead
+#         network_type: 'LAN'
+
+dev-us-pao-20-proxy-21-lin.headspin.io:
+    # Fox Roku: bc:d7:d4:34:62:18
+    X01000EF8JR9:
+        host: 10.120.1.98
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+
+dev-us-pao-20-proxy-27-lin.headspin.io:
+    X010001F8763:
+        host: 10.120.1.81
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+
+dev-us-sny-9-proxy-3-lin.headspin.io:
+    # Discovery Roku TV (TCL): C0:79:82:7A:5E:0B
+    X012005GM7WE:
+        host: 10.120.1.35
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+
+dev-us-sny-9-proxy-10-lin.headspin.io:
+    # Roku Ultra : 84:EA:ED:AA:62:3A , 84:EA:ED:AA:5D:DB
+    X01000LW0HD2:
+        host: 10.120.1.87
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+    X0100093274X:
+        host: 10.120.1.89
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+
+dev-us-sny-9-proxy-13-lin.headspin.io:
+    # Roku Express : D8:31:34:28:DB:C4 , Roku Ultra 84:EA:ED:1A:1F:6A
+    YG000E952064:
+        host: 10.120.1.96
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+    X01000YUJFS2:
+        host: 10.120.1.95
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+
+dev-us-sny-7-proxy-4-lin.headspin.io:
+    #84:EA:ED:A0:66:28
+    X01000M8N2JR:
+        host: 192.168.11.103
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+#     # NOW TV Stick : 8C:49:62:80:93:16
+#     D43038777680:
+#         host: 192.168.11.138
+#         user: rokudev
+#         pass: spinhead
+#         network_type: 'WiFi'
+
+dev-us-sny-9-proxy-24-lin.headspin.io:
+    #Roku Express  : B8:A1:75:F7:2D:1A
+    YU00KT342248:
+        host: 10.120.1.148
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+    # Roku STREAMING STICK+ : 20:EF:BD:84:42:0E
+    YH0055998368:
+        host: 10.120.1.63
+        user: rokudev
+        pass: spinhead
+        network_type: 'WiFi'
+    #Roku Express  : D4:E2:2F:0B:4D:6C
+    X02600RUALWE:
+        host: 10.120.1.223
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+
+dev-us-pao-7-proxy-6-lin.headspin.io:
+    # ABS CBN Phillpine
+    X010003P8AHH:
+        host: 192.168.11.235
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+
+dev-us-pao-3-proxy-24-lin.headspin.io:
+    X010000NPA580:
+        host: 192.168.11.241
+        user: rokudev
+        pass: spinhead
+        network_type: 'WiFi'
+
+dev-us-pao-3-proxy-8-lin.headspin.io:
+    #84:EA:ED:A0:24:D9
+    X010001WL6WL:
+        host: 192.168.11.39
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+
+dev-us-sny-9-proxy-29-lin.headspin.io:
+    #88:DE:A9:00:BD:E0
+    YR00GA228056:
+        host: 10.120.1.151
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+
+dev-us-sny-9-proxy-31-lin.headspin.io:
+    #88:DE:A9:4B:60:CC
+    YR009V971738:
+        host: 10.120.1.165
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+    #AC:AE:19:49:BA:72
+    YG0055171334:
+        host: 10.120.1.105
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+    #B0:EE:7B:6E:A9:A0
+    YR00H2335407:
+        host: 10.120.1.84
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+
+dev-us-sny-9-proxy-32-lin.headspin.io:
+    #D4:E2:2F:99:D3:C1
+    X02600LX08J3:
+        host: 10.120.1.115
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+    #A8:B5:7C:D6:8D:79
+    X025006U6XRH:
+        host: 10.120.1.127
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+
+dev-us-sny-9-proxy-33-lin.headspin.io:
+    #88:DE:A9:22:07:B0
+    YR008D623883:
+        host: 10.120.1.117
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+    #AC:AE:19:58:45:1C
+    YG00EM105990:
+        host: 10.120.1.184
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+
+dev-us-sny-9-proxy-34-lin.headspin.io:
+    #C8:3A:6B:A9:09:2F
+    YG004K566906:
+        host: 10.120.1.107
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+    #D4:E2:2F:99:D3:C3
+    X02600HCWPXL:
+        host: 10.120.1.118
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+
+dev-us-sny-11-proxy-5-lin.headspin.io:
+    # Discovery Roku TV (TCL): C0:79:82:8F:A1:5C
+    X012000U2SMY:
+        host: 192.168.11.97
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+    # Discovery Roku TV (TCL): C0:79:82:EF:7A:D5
+    X01200W8674V:
+        host: 192.168.11.119
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+
+dev-us-sny-11-proxy-6-lin.headspin.io:
+    # Discovery Roku TV (TCL): C0:79:82:8B:5F:A3
+    X01200CE8SE8:
+        host: 192.168.11.224
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+    # Discovery Roku TV (TCL): C0:79:82:ED:78:DE
+    X01200EG53AF:
+        host: 192.168.11.196
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+
+dev-us-sny-11-proxy-7-lin.headspin.io:
+    # Discovery Roku TV (TCL): C0:79:82:8F:9F:88
+    X01200NLVVX7:
+        host: 192.168.11.166
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+    # Discovery Roku TV (TCL): C0:79:82:EF:78:55
+    X01200V1GNS6:
+        host: 192.168.11.221
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+    # Discovery Roku TV (TCL): C0:79:82:EF:78:54
+    X01200YJURA3:
+        host: 192.168.11.220
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+    # Discovery Roku TV (TCL): C0:79:82:EF:7B:38
+    X01200LP252P:
+        host: 192.168.11.53
+        user: rokudev
+        pass: spinhead
+        network_type: 'LAN'
+
+dev-us-sny-9-proxy-37-lin.headspin.io:
+    # Discovery Roku Express Plus: AC:AE:19:53:3C:83
+    YG00AH614000:
+        host: 10.120.1.214
+        user: rokudev
+        pass: spinhead
+        network_type: 'WiFi'
+    # Discovery Roku Premier: A8:B5:7C:82:2D:AB
+    YH00W5674691:
+        host: 10.120.1.166
+        user: rokudev
+        pass: spinhead
+        network_type: 'WiFi'
+
+dev-us-sny-9-proxy-27-lin.headspin.io:
+    # Discovery Roku HD TV: 84:3E:1D:72:E7:F1
+    X02000XY904T:
+        host: 10.120.1.144
+        user: rokudev
+        pass: spinhead
+        network_type: 'WiFi'
+
+dev-us-sny-6-proxy-2-lin.headspin.io:
+    # Discovery Roku Express Plus: AC:AE:19:D3:D3:98
+    X004004R9A2M:
+        host: 10.7.56.16
+        user: rokudev
+        pass: spinhead
+        network_type: 'WiFi'
+
+dev-us-sny-9-proxy-2-lin.headspin.io:
+    # Discovery Roku Express Plus: 08:C3:B3:0F:18:6E
+    X01200YL9UEM:
+        host: 10.120.1.111
+        user: rokudev
+        pass: spinhead
+        network_type: 'WiFi'
