@@ -99,73 +99,7 @@ dev-in-blr-0-proxy-5-lin.headspin.io:
     - 1.17.0
     - 1.22.0
 
-dev-in-blr-0-proxy-1-lin.headspin.io:
-  external_port: 7006
-  internal_port: 1800
-dev-in-cjb-0-proxy-0-lin.headspin.io:
-  external_port: 7002
-  internal_port: 1800
-  appium_versions:
-    - 1.17.0
-    - 1.22.0
 
-dev-in-cjb-0-proxy-1-lin.headspin.io:
-  external_port: 7004
-  internal_port: 1800
-  appium_versions:
-    - 1.22.3
-    - "2.0.0-beta.57"
-  default_appium2_version: "2.0.0-beta.57"
-  appium_drivers:
-    - uiautomator2:
-      - sourceType: npm
-        package: appium-uiautomator2-driver
-        version: "2.12.1"
-
-dev-ke-nai-0-proxy-5-lin.headspin.io:
-  external_port: 3023
-  internal_port: 1800
-  appium_versions:
-    - 1.14.2
-    - 1.17.0
-
-dev-kr-icn-1-proxy-10-mac.headspin.io:
-  external_port: 7015
-  internal_port: 1800
-  appium_versions:
-    - 1.22.3
-    - type: npm
-      version: "2.1.3"
-  default_version: latest
-  default_appium2_version: "2.1.3"
-  appium_drivers:
-    - xcuitest:
-      - sourceType: npm
-        package: appium-xcuitest-driver
-        version: "5.8.2"
-
-dev-ma-rba-0-proxy-2-lin.headspin.io:
-  external_port: 7009
-  internal_port: 1800
-  appium_versions:
-    - 1.17.0
-
-dev-nl-hag-0-proxy-1-lin.headspin.io:
-  external_port: 7004
-  internal_port: 1800
-  appium_versions:
-    - 1.15.1
-    - 1.17.0
-
-dev-ph-mnl-0-proxy-0-mac.headspin.io:
-  external_port: 3008
-  internal_port: 1800
-  appium_versions:
-    - 1.17.0
-
-dev-pk-isl-0-proxy-4-mac.headspin.io:
-  external_port: 7004
-  internal_port: 1800
   opencv: false
   appium_versions:
     - 1.17.0
@@ -185,7 +119,25 @@ dev-id-jk-0-proxy-0-mac.headspin.io:
 
 dev-in-blr-0-proxy-0-mac.headspin.io:
   external_port: 7014
-  internal_port: 1800
+  internddcdkjcndc
+  d
+  csdc
+  sdv
+  dsfv
+  dfv
+  fgb
+  sgb
+  vb
+  dsv
+  bd
+  gbwdg
+  bd
+  bdg
+  bdgb
+  db
+  dfb
+  db
+  fbal_port: 1800
   appium_versions:
     - 1.22.3
     - type: npm
